@@ -1,0 +1,45 @@
+# ── Secrets — NEVER commit these ──────────────────
+.env
+.env.*
+config.py
+secrets.py
+
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ──────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── OS junk ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ──────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── Logs & temp ───────────────────────────────────
+*.log
+*.tmp
+*.temp
+/logs/
+
+# ── Audio/model cache ─────────────────────────────
+*.mp3
+*.wav
+*.pt
+*.pth
