@@ -1,5 +1,8 @@
 from datetime import datetime
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 def get_greeting():
     now = datetime.now()
@@ -116,7 +119,7 @@ def get_weather():
         city = loc.get("city", "your city")
 
         # 🌤️ OpenWeatherMap API
-        API_KEY = "439db0b3ac064c8aac78e9912c3f6c35"
+        API_KEY = os.getenv("WEATHER_API_KEY")
 
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
 
